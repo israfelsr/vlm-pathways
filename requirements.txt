@@ -1,0 +1,19 @@
+# Core dependencies (pinned to the versions used in the paper experiments).
+# For the full, exhaustively pinned environment see environment.yml.
+torch==2.8.0
+torchvision==0.23.0
+transformers==4.57.0
+accelerate==1.10.1
+datasets==4.2.0
+safetensors==0.6.2
+sentencepiece==0.2.1
+einops==0.8.1
+numpy==2.2.6
+pillow==11.3.0
+matplotlib==3.10.7
+pyyaml==6.0.3
+tqdm==4.67.1
+
+# data building only (see data/)
+gdown==5.2.0
+pycocotools==2.0.10

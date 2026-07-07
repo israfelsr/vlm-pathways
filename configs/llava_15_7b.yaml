@@ -1,0 +1,24 @@
+# LLaVA-1.5-7B configuration
+
+# Model
+model_path: llava-hf/llava-1.5-7b-hf
+
+# Dataset
+dataset_path: ./data
+dataset_name: controlled_shapes_pairs
+
+# Sampling
+n_samples: null  # null = all samples
+
+# Output
+save: true
+
+# Knockout: mandatory paths (run by default)
+knockout_paths:
+  - direct        # last → image (1-hop test)
+  - mediated      # text → image (2-hop test)
+  - last_to_text  # last → text  (readout test)
+
+# Knockout: optional settings
+knockout_fraction: 1.0
+layers: all

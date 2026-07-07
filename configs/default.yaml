@@ -1,0 +1,24 @@
+# Qwen3-VL-4B-Instruct configuration
+
+# Model
+model_path: Qwen/Qwen3-VL-4B-Instruct
+
+# Dataset
+dataset_path: ./data
+dataset_name: controlled_shapes_pairs
+
+# Sampling
+n_samples: null  # null = all samples
+
+# Output
+save: true
+
+# Knockout: mandatory paths (run by default)
+knockout_paths:
+  - direct        # last → image (1-hop test)
+  - mediated      # text → image (2-hop test)
+  - last_to_text  # last → text  (readout test)
+
+# Knockout: optional settings
+knockout_fraction: 1.0    # 0.0 to 1.0
+layers: all               # "all" or "23-28"

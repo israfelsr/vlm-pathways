@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Model weights and experiment outputs (not versioned)
+results/
+figures/
+*.tar.gz
+*.out
+
+# data/ holds the build scripts (tracked) plus datasets and raw downloads (ignored)
+data/*
+!data/*.py
+!data/*.md
+
+# Local environment
+.env
+.venv/
+venv/

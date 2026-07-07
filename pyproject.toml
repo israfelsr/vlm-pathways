@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlm-pathways"
+version = "0.1.0"
+description = "Experiment code for studying visual information routing in Vision-Language Models."
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["vlm_spatial"]
