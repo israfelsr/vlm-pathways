@@ -1,5 +1,7 @@
 # Pathways of Visual Information Flow in Vision-Language Models
 
+[![arXiv](https://img.shields.io/badge/arXiv-2607.03358-b31b1b.svg)](https://arxiv.org/abs/2607.03358)
+
 ## Install
 
 ```bash
